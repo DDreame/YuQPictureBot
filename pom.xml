@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <parent>
+        <groupId>com.IceCreamQAQ.YuQ</groupId>
+        <artifactId>YuQFramework</artifactId>
+        <version>0.0.1.5</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>DemoPlugin</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.meowy.cqp</groupId>
+            <artifactId>jcq-coolq</artifactId>
+            <version>1.3.1</version>
+            <!-- 打包发布时建议将依赖限制打开，可以有效减小 Jar 包体积 -->
+            <!-- 运行 Main 方法进行测试时请将本依赖限制移除。 -->
+<!--            <scope>provided</scope>-->
+<!--            fastJson 处理Json-->
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.23</version>
+        </dependency>
+
+<!--        HtppClinet 处理链接请求-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
+        <!--OkHttp 与HttpClient相同-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <url>https://maven.IceCreamQAQ.com/repository/maven-public/</url>
+            <id>aaabbbcccddd</id>
+        </repository>
+    </repositories>
+
+</project>
